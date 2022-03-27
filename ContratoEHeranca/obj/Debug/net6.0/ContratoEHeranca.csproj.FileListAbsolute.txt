@@ -1,0 +1,15 @@
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\bin\Debug\net6.0\ContratoEHeranca.exe
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\bin\Debug\net6.0\ContratoEHeranca.deps.json
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\bin\Debug\net6.0\ContratoEHeranca.runtimeconfig.json
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\bin\Debug\net6.0\ContratoEHeranca.dll
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\bin\Debug\net6.0\ContratoEHeranca.pdb
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.csproj.AssemblyReference.cache
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.GeneratedMSBuildEditorConfig.editorconfig
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.AssemblyInfoInputs.cache
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.AssemblyInfo.cs
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.csproj.CoreCompileInputs.cache
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.dll
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\refint\ContratoEHeranca.dll
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.pdb
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ContratoEHeranca.genruntimeconfig.cache
+S:\Visual Studio Projects\GIT\Aprendizado\ContratoEHeranca\obj\Debug\net6.0\ref\ContratoEHeranca.dll
