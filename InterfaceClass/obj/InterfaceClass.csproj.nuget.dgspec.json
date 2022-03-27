@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Visual Studio Projects\\GIT\\Aprendizado\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj": {}
+    "S:\\Visual Studio Projects\\GIT\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj": {}
   },
   "projects": {
-    "S:\\Visual Studio Projects\\GIT\\Aprendizado\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj": {
+    "S:\\Visual Studio Projects\\GIT\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Visual Studio Projects\\GIT\\Aprendizado\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj",
+        "projectUniqueName": "S:\\Visual Studio Projects\\GIT\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj",
         "projectName": "InterfaceClass",
-        "projectPath": "S:\\Visual Studio Projects\\GIT\\Aprendizado\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj",
+        "projectPath": "S:\\Visual Studio Projects\\GIT\\Aprendizado\\InterfaceClass\\InterfaceClass.csproj",
         "packagesPath": "C:\\Users\\SISUNIVAG\\.nuget\\packages\\",
-        "outputPath": "S:\\Visual Studio Projects\\GIT\\Aprendizado\\Aprendizado\\InterfaceClass\\obj\\",
+        "outputPath": "S:\\Visual Studio Projects\\GIT\\Aprendizado\\InterfaceClass\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
