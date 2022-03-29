@@ -1,0 +1,15 @@
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\bin\Debug\net6.0\List_Set_Generics.exe
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\bin\Debug\net6.0\List_Set_Generics.deps.json
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\bin\Debug\net6.0\List_Set_Generics.runtimeconfig.json
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\bin\Debug\net6.0\List_Set_Generics.dll
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\bin\Debug\net6.0\List_Set_Generics.pdb
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.csproj.AssemblyReference.cache
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.GeneratedMSBuildEditorConfig.editorconfig
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.AssemblyInfoInputs.cache
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.AssemblyInfo.cs
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.csproj.CoreCompileInputs.cache
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.dll
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\refint\List_Set_Generics.dll
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.pdb
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\List_Set_Generics.genruntimeconfig.cache
+S:\Visual Studio Projects\GIT\Aprendizado\List_Set_Generics\obj\Debug\net6.0\ref\List_Set_Generics.dll
