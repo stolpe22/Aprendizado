@@ -12,5 +12,9 @@ for (int i = 0; i < n; i++)
     printService.AddValue(x);
 }
 
+int a = (int)printService.First();
+int b = a + 2;
+Console.WriteLine(b);
+
 printService.Print();
 Console.WriteLine("First: " + printService.First());
