@@ -1,11 +1,11 @@
 ﻿namespace List_Set_Generics
 {
-    class PrintService
+    class PrintService<T>
     {
-        private object[] _values = new object[10];
+        private T[] _values = new T[10];
         private int _count = 0;
 
-        public void AddValue(object value)
+        public void AddValue(T value)
         {
             if (_count == _values.Length)
                 throw new InvalidOperationException("PrintService is full.");
@@ -14,7 +14,7 @@
             _count++;
         }
 
-        public object First()
+        public T First()
         {
             if (_count == 0)
                 throw new InvalidOperationException("PrintService is empty.");
