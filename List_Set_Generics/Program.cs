@@ -16,7 +16,7 @@ int a = (int)printService.First();
 int b = a + 2;
 Console.WriteLine(b);
 
-_ = "Teste git ignore";
+_ = "Teste git ignore 2.0";
 
 printService.Print();
 Console.WriteLine("First: " + printService.First());
