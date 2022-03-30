@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generics_Set_Dictionary", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List_Set_Generics", "List_Set_Generics\List_Set_Generics.csproj", "{F72D7B81-4196-429D-83B3-19897A43598C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restricoes_Generics", "Restricoes_Generics\Restricoes_Generics.csproj", "{897902D2-F013-479E-B9E9-1145E744CE36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restricoes_Generics", "Restricoes_Generics\Restricoes_Generics.csproj", "{897902D2-F013-479E-B9E9-1145E744CE36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetHashCode_Equals", "GetHashCode_Equals\GetHashCode_Equals.csproj", "{9C449408-E6A3-4B81-9B71-444518D8274F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{897902D2-F013-479E-B9E9-1145E744CE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{897902D2-F013-479E-B9E9-1145E744CE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{897902D2-F013-479E-B9E9-1145E744CE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C449408-E6A3-4B81-9B71-444518D8274F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C449408-E6A3-4B81-9B71-444518D8274F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C449408-E6A3-4B81-9B71-444518D8274F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C449408-E6A3-4B81-9B71-444518D8274F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{1408FE7B-1A26-4634-86B9-6B1174846934} = {E315B777-0197-48EB-BD15-55CCC6BD7662}
 		{F72D7B81-4196-429D-83B3-19897A43598C} = {B7477C24-75E6-46A5-AEC2-AE4E28301EF0}
 		{897902D2-F013-479E-B9E9-1145E744CE36} = {B7477C24-75E6-46A5-AEC2-AE4E28301EF0}
+		{9C449408-E6A3-4B81-9B71-444518D8274F} = {B7477C24-75E6-46A5-AEC2-AE4E28301EF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD617100-D81B-433B-AE90-B2E660E79308}
