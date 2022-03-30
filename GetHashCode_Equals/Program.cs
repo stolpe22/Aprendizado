@@ -2,4 +2,5 @@
 string a = "Maria";
 string b = "Alex";
 
-Console.WriteLine(a.Equals(b));
+Console.WriteLine(a.GetHashCode());
+Console.WriteLine(b.GetHashCode());
