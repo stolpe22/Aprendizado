@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-string a = "Maria";
-string b = "Alex";
+using GetHashCode_Equals.Entities;
 
-Console.WriteLine(a.GetHashCode());
-Console.WriteLine(b.GetHashCode());
+Client client = new Client { Name = "Maria", Email = "maria@gmail.com" };
+Client client2 = new Client { Name = "Alex", Email = "alex@gmail.com" };
+
+//Os emails são diferentes, logo a comparação entre os objetos retornará false;
+Console.WriteLine(client.Equals(client2));
