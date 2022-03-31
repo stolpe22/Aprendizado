@@ -12,6 +12,6 @@ HashSet<Point> points = new HashSet<Point>();
 points.Add(new Point(3, 4));
 points.Add(new Point(5, 10));
 
-Product product2 = new Product("Nootebook", 1200.00);
+Product product2 = new Product("Notebook", 1200.00);
 //Contains, neste caso, por não ter implementação do GetHashCode e Equals, ele compara a referência de memória e retorna FALSE;
 Console.WriteLine(products.Contains(product2));
