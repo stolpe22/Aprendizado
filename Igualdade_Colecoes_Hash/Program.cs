@@ -1,13 +1,17 @@
-﻿//Fundamentos e Conceitos de comparação
+﻿using Igualdade_Colecoes_Hash.Entities;
 
-HashSet<string> set = new HashSet<string>();
+//Fundamentos e Conceitos de comparação
 
-set.Add("Maria");
-set.Add("Alex");
+//Tipo Referencia
+HashSet<Product> products = new HashSet<Product>();
+products.Add(new Product("TV", 900.00));
+products.Add(new Product("Notebook", 1200.00));
 
-//Se GetHashCode e Equals estiverem implementados:
-//Primeiro GetHashCode. Se der igual, ele usa Equals para confirmar
-//Se GetHashCode e Equals NÃO estiverem implementados:
-//Tipos referência: compara as referências dos objetos
-//Tipos valor: compara os valores dos atributos
-Console.WriteLine(set.Contains("Maria"));
+//Tipo Valor
+HashSet<Point> points = new HashSet<Point>();
+points.Add(new Point(3, 4));
+points.Add(new Point(5, 10));
+
+Product product2 = new Product("Nootebook", 1200.00);
+//Contains, neste caso, por não ter implementação do GetHashCode e Equals, ele compara a referência de memória e retorna FALSE;
+Console.WriteLine(products.Contains(product2));
