@@ -13,5 +13,5 @@ points.Add(new Point(3, 4));
 points.Add(new Point(5, 10));
 
 Product product2 = new Product("Notebook", 1200.00);
-//Contains, neste caso, por não ter implementação do GetHashCode e Equals, ele compara a referência de memória e retorna FALSE;
+//GetHashCode e Equals foram implementados na classe Product, a comparação do Contains, agora, retorna FALSE;
 Console.WriteLine(products.Contains(product2));
