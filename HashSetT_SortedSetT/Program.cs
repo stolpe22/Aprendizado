@@ -5,6 +5,7 @@ SortedSet<int> b = new SortedSet<int>() { 5, 6, 7, 8, 9, 10 };
 
 // union
 SortedSet<int> c = new SortedSet<int>(a);
+//Aqui o conjunto c une-se ao cojunto b, sem repetir os elementos devido à restrição. Logo, o resultado é 0 2 4 5 6 7 8 9 10
 c.UnionWith(b);
 
 PrintCollection(c);
