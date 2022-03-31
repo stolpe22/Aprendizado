@@ -1,14 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-HashSet<string> set = new HashSet<string>();
+SortedSet<int> a = new SortedSet<int>() { 0, 2, 4, 5, 6, 8, 10 };
+SortedSet<int> b = new SortedSet<int>() { 5, 6, 7, 8, 9, 10 };
 
-set.Add("TV");
-set.Add("Notebook");
-set.Add("Tablet");
+// union
+SortedSet<int> c = new SortedSet<int>(a);
+c.UnionWith(b);
 
-Console.WriteLine(set.Contains("Notebook"));
+PrintCollection(c);
 
-foreach (string p in set)
+static void PrintCollection<T>(IEnumerable<T> collection)
 {
-    Console.WriteLine(p);
+    foreach (T item in collection)
+    {
+        Console.Write(item+" ");
+    }
+    Console.WriteLine();
 }
