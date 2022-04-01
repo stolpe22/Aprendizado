@@ -10,4 +10,18 @@ Console.WriteLine(cookies["email"]);
 
 cookies.Remove("email");
 
-Console.WriteLine(cookies["email"]);//Neste caso retorna erro KeyNotFoundException
+if (cookies.ContainsKey("email"))
+    Console.WriteLine(cookies["email"]);
+else
+    Console.WriteLine("There is no 'email' key");
+
+Console.WriteLine("Size: " + cookies.Count);
+
+Console.WriteLine();
+
+Console.WriteLine("ALL COOKIES:");
+
+foreach(KeyValuePair<string, string> kvp in cookies)
+{
+    Console.WriteLine(kvp.Key + ": " + kvp.Value);
+}
