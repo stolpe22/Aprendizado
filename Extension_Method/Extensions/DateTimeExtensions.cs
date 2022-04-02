@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Extension_Method.Extensions
+namespace System
 {
     static class DateTimeExtensions
     {
