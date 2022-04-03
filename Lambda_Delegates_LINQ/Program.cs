@@ -10,7 +10,7 @@ namespace Lambda_Delegates
             double a = 10;
             double b = 12;
 
-            BinaryNumericOperation op = CalculationService.Sum;
+            BinaryNumericOperation op = CalculationService.Square; //Dá erro porque a assinatura do método Square não condiz com o que foi definido no delegate 
 
             double result = op(a, b);
             Console.WriteLine(result);
