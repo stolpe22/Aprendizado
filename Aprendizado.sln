@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension_Method", "Extensi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambda_Delegates_LINQ", "Lambda_Delegates_LINQ", "{A34B4C24-920A-4690-B6DB-5AF2ABDECE16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lambda_Delegates_LINQ", "Lambda_Delegates_LINQ\Lambda_Delegates_LINQ.csproj", "{119D0E21-FA5F-440B-ABE7-6FD0B68D8699}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lambda_Delegates_LINQ", "Lambda_Delegates_LINQ\Lambda_Delegates_LINQ.csproj", "{119D0E21-FA5F-440B-ABE7-6FD0B68D8699}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicate", "Predicate\Predicate.csproj", "{0089C98E-F550-45E7-9F2B-0849B626D537}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Predicate", "Predicate\Predicate.csproj", "{0089C98E-F550-45E7-9F2B-0849B626D537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action", "Action\Action.csproj", "{D7BF8245-046C-4AD2-8863-48C93CC2A390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{0089C98E-F550-45E7-9F2B-0849B626D537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0089C98E-F550-45E7-9F2B-0849B626D537}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0089C98E-F550-45E7-9F2B-0849B626D537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BF8245-046C-4AD2-8863-48C93CC2A390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BF8245-046C-4AD2-8863-48C93CC2A390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BF8245-046C-4AD2-8863-48C93CC2A390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BF8245-046C-4AD2-8863-48C93CC2A390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{C86EB1DE-123F-4106-BF9D-F02A611B1BDF} = {05663AD4-7ED8-4A55-9EE5-0A069BECA333}
 		{119D0E21-FA5F-440B-ABE7-6FD0B68D8699} = {A34B4C24-920A-4690-B6DB-5AF2ABDECE16}
 		{0089C98E-F550-45E7-9F2B-0849B626D537} = {A34B4C24-920A-4690-B6DB-5AF2ABDECE16}
+		{D7BF8245-046C-4AD2-8863-48C93CC2A390} = {A34B4C24-920A-4690-B6DB-5AF2ABDECE16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD617100-D81B-433B-AE90-B2E660E79308}
