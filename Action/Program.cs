@@ -7,7 +7,7 @@ list.Add(new Product("Mouse", 50.00));
 list.Add(new Product("Tablet", 350.50));
 list.Add(new Product("HD Case", 80.90));
 
-Action<Product> action = UpdatePrice; //Posso chamar o método na Action
+Action<Product> action = p => { p.Price += p.Price * 0.1; }; //recebe o argumento 'p' e chama uma ação. Para a ação abre e fecha chaves para indicar que a fução tem um corpo mas não vai retornar nada. 
 
 list.ForEach(action);
 
