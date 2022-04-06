@@ -45,6 +45,10 @@ class Program
         //Objeto anonimo tem um ToString padrão. Desta forma: { Name = Computer, Price = 1100.00, CategoryName = Electronics }
         Print("NAMES STARTED WITH 'C' AND ANONYMOUS OBJECT", r3);
 
+        //Produtos onde categoria tier igual a 1 ordenado por preço e depois por nome
+        var r4 = products.Where(p => p.Category.Tier == 1).OrderBy(p => p.Price).ThenBy(p => p.Name);
+        Print("TIER 1 ORDER BY PRICE THEN BY NAME", r4);
+
     }
 }
 
