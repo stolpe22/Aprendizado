@@ -32,8 +32,18 @@ class Program
             new Product() { Id = 11, Name = "Level", Price = 70.0, Category = c1 }
         };
 
+        //Produtos onde categoria tier igual a 1 e preço menor que 900.00
         var r1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.00);
         Print("TIER 1 AND PRICE < 900:", r1);
+
+        //Produtos onde categoria nome igual a 'Tools' selecione o nome do produto
+        var r2 = products.Where(p => p.Category.Name == "Tools").Select(p => p.Name);
+        Print("NAMES OF PRODUCTS FROM TOOLS", r2);
+
+        //Produtos onde nome começa com 'C' selecionar objeto anonimo trazendo apenas nome, preço e categoria (este último precisa de alias, pois "Name" já existe no objeto anonimo)
+        var r3 = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, CategoryName = p.Category.Name });
+        //Objeto anonimo tem um ToString padrão. Desta forma: { Name = Computer, Price = 1100.00, CategoryName = Electronics }
+        Print("NAMES STARTED WITH 'C' AND ANONYMOUS OBJECT", r3);
 
     }
 }
