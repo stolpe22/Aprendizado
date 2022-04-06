@@ -57,6 +57,14 @@ class Program
         Console.WriteLine("FirstOrDefault TEST 1: " + r6);
         var r7 = products.Where(p => p.Price > 3000.00).FirstOrDefault(); //first em coleção vazia retorna erro, ou deve ser tratado ou utlizado FirstOrDefault()
         Console.WriteLine("FirstOrDefault TEST 2: " + r7);
+
+        Console.WriteLine();
+
+        var r8 = products.Where(p => p.Id == 3).SingleOrDefault();//Não funciona se retornar mais de um resultado
+        Console.WriteLine("SingleOrDefault TEST 1: " + r8);
+        var r9 = products.Where(p => p.Id == 30).SingleOrDefault();//Não funciona se retornar mais de um resultado
+        Console.WriteLine("SingleOrDefault TEST 2: " + r9);
+
     }
 }
 
