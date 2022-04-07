@@ -65,6 +65,32 @@ class Program
         var r9 = products.Where(p => p.Id == 30).SingleOrDefault();//Não funciona se retornar mais de um resultado
         Console.WriteLine("SingleOrDefault TEST 2: " + r9);
 
+        var r10 = products.Max(p => p.Price); //Maior Preço
+        Console.WriteLine("Max price: " + r10); 
+        var r11 = products.Min(p => p.Price); //Menor Preço
+        Console.WriteLine("Min price: " + r11); 
+        //OPERAÇÕES AGREGADAS
+        var r12 = products.Where(p => p.Category.Id == 1).Sum(p => p.Price); //Somar os preços da categoria 1
+        Console.WriteLine("Category 1 Sum prices: " + r12);
+        var r13 = products.Where(p => p.Category.Id == 1).Average(p => p.Price); // Média dos preços da categoria 1 - Se o filtro for vazio, da erro
+        Console.WriteLine("Category 1 Average prices: " + r13);
+        var r14 = products.Where(p => p.Category.Id == 5).Select(p => p.Price).DefaultIfEmpty(0.0).Average(); //Agora, dando o select transforma em uma lista de double, utiliza-se DefaultIfEmpty, e então a exceção não dispara
+        Console.WriteLine("Category 5 Average prices: " + r14);
+        //OPERAÇÃO AGREGADA PERSONALIZADA              //Seleciona o campo que vai operar   //recebe x e y e soma
+        var r15 = products.Where(p => p.Category.Id == 1).Select(p => p.Price).Aggregate(0.0, (x, y) => x + y); // o 0.0 é uma sobrecarga que define um valor padrão para evitar erro quando vazio
+        Console.WriteLine("Category 1 aggregate sum: " + r15);
+        Console.WriteLine();
+
+        var r16 = products.GroupBy(p => p.Category);
+        foreach (IGrouping<Category, Product> group in r16) //para cada grupo, imprima o nome do grupo
+        {
+            Console.WriteLine("Category " + group.Key.Name + ":");
+            foreach (Product p in group) //para cada item do grupo, imprima o nome do item
+            {
+                Console.WriteLine(p);
+            }
+            Console.WriteLine();
+        }
     }
 }
 
