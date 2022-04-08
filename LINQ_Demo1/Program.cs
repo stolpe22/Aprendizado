@@ -32,6 +32,7 @@ class Program
             new Product() { Id = 11, Name = "Level", Price = 70.0, Category = c1 }
         };
 
+        #region DEMO 1
         //Produtos onde categoria tier igual a 1 e preço menor que 900.00
         var r1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.00);
         Print("TIER 1 AND PRICE < 900:", r1);
@@ -66,9 +67,9 @@ class Program
         Console.WriteLine("SingleOrDefault TEST 2: " + r9);
 
         var r10 = products.Max(p => p.Price); //Maior Preço
-        Console.WriteLine("Max price: " + r10); 
+        Console.WriteLine("Max price: " + r10);
         var r11 = products.Min(p => p.Price); //Menor Preço
-        Console.WriteLine("Min price: " + r11); 
+        Console.WriteLine("Min price: " + r11);
         //OPERAÇÕES AGREGADAS
         var r12 = products.Where(p => p.Category.Id == 1).Sum(p => p.Price); //Somar os preços da categoria 1
         Console.WriteLine("Category 1 Sum prices: " + r12);
@@ -91,6 +92,70 @@ class Program
             }
             Console.WriteLine();
         }
+        #endregion
+
+        #region Demo 2
+        //CONSULTAS REFEITAS COM NOTAÇÃO SIMILAR À SQL
+
+        Console.WriteLine("DEMO 2 -----------------------------");
+
+        //var r1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.0);
+        var r101 =
+            from p in products
+            where p.Category.Tier == 1 && p.Price < 900
+            select p;
+        Print("TIER 1 AND PRICE < 900:", r101);
+
+        //var r2 = products.Where(p => p.Category.Name == "Tools").Select(p => p.Name);
+        var r102 =
+            from p in products
+            where p.Category.Name == "Tools"
+            select p.Name;
+        Print("NAMES OF PRODUCTS FROM TOOLS", r102);
+
+        //var r3 = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, CategoryName = p.Category.Name });
+        var r103 =
+            from p in products
+            where p.Name[0] == 'C'
+            select new
+            {
+                p.Name,
+                p.Price,
+                CategoryName = p.Category.Name
+            };
+        Print("NAMES STARTED WITH 'C' AND ANONYMOUS OBJECT", r103);
+
+        //var r4 = products.Where(p => p.Category.Tier == 1).OrderBy(p => p.Price).ThenBy(p => p.Name);
+        var r104 =
+            from p in products
+            where p.Category.Tier == 1
+            orderby p.Name
+            orderby p.Price
+            select p;
+        Print("TIER 1 ORDER BY PRICE THEN BY NAME", r104);
+
+        //var r5 = r4.Skip(2).Take(4);
+        var r105 =
+            (from p in r4
+             select p)
+             .Skip(2)
+             .Take(4);
+        Print("TIER 1 ORDER BY PRICE THEN BY NAME SKIP 2 TAKE 4", r105);
+
+        //var r16 = products.GroupBy(p => p.Category);
+        var r106 =
+            from p in products
+            group p by p.Category;
+        foreach (IGrouping<Category, Product> group in r106)
+        {
+            Console.WriteLine("Category " + group.Key.Name + ":");
+            foreach (Product p in group)
+            {
+                Console.WriteLine(p);
+            }
+            Console.WriteLine();
+        }
+        #endregion
     }
 }
 
