@@ -1,0 +1,22 @@
+﻿using LINQ_Exercicio_Resolvido.Entities;
+using System.Globalization;
+
+Console.Write("Enter full file path: ");
+string path = Console.ReadLine();
+
+List<Product> products = new List<Product>();
+
+using (StreamReader sr = File.OpenText(path))
+{
+    while (!sr.EndOfStream)
+    {
+        string[] fields = sr.ReadLine().Split(',');
+        string name = fields[0];
+        double price = double.Parse(fields[1], CultureInfo.InvariantCulture);
+        products.Add(new Product(name, price));
+    }
+
+    var avg = products.Select(p => p.Price).DefaultIfEmpty(0.0).Average();
+    
+
+}
